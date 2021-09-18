@@ -31,7 +31,7 @@ import fonts from "../styles/fonts";
                     width={50} 
                     height={50} 
                     />  
-                <Text >
+                <Text style={styles.title} >
                     { data.name }
                 </Text>
                 <View style={styles.details}>
@@ -63,10 +63,12 @@ import fonts from "../styles/fonts";
           marginLeft: 10,
           fontFamily: fonts.heading,
           fontSize: 17,
-          color: colors.heading
+          color: colors.heading,
       },
       details: {
           alignItems: 'center',
+          position: "absolute",
+          right: 10,
       },
       timeLabel: {
           fontSize: 16,

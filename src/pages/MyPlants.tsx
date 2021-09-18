@@ -14,8 +14,7 @@ import { Header } from "../components/Header";
 import colors from "../styles/colors";
 import waterdrop from "../assets/waterdrop.png"
 import { PlantProps, LoadPlant } from "../libs/storage";
-import { formatDistance } from "date-fns/esm";
-import { pt } from "date-fns/locale"
+import { formatDistance } from "date-fns/esm";import { pt } from "date-fns/locale"
 import fonts from "../styles/fonts";
 import { PlantCardSecundary } from "../components/PlantCardSecundary";
 
@@ -27,6 +26,7 @@ export function MyPlants(){
     useEffect (() => {
         async function loadStorageData() {
             const plantsStorage = await LoadPlant()
+            console.log({plantsStorage})
 
             const nextTime = formatDistance(
                 new Date(plantsStorage[0].dateTimeNotification).getTime(),

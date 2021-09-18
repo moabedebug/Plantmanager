@@ -52,7 +52,7 @@ export function PlantSelect(){
 
     async function fetchPlants(){
         const { data } = await api
-        .get(`plants?_sort=name&_order=asc&_page=${page}&_limit=8`)
+        .get(`plants?_sort=name&_order=asc&_page=${page}&_limit=8`);
 
         if(!data)
         return setLoading(true)
@@ -79,10 +79,11 @@ export function PlantSelect(){
     }
 
     function handlePlantSelect(plant: PlantProps){
-        navigation.navigate('PlantSave', { plant })
+        navigation.navigate("PlantSave", { plant })
     }
 
 
+    
     useEffect(() => {
         async function fetchEnviroment(){
             const { data } = await 
@@ -102,7 +103,6 @@ export function PlantSelect(){
 
     useEffect(() => {
         fetchPlants();
-
     },[])
 
 
