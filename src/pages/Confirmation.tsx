@@ -32,6 +32,7 @@ export function Confirmation(){
     const {
         title,
         subtitle,
+        buttonTitle,
         icon,
         nextScreen
     
@@ -57,7 +58,7 @@ export function Confirmation(){
 
                 <View style={styles.footer}>
                     <Button
-                        title="Começar"
+                        title={ buttonTitle}
                         onPress={handleMoveOn}
                     />
                 </View>

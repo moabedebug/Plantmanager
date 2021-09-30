@@ -191,6 +191,7 @@ const styles = StyleSheet.create({
     enviromentList: {
         height: 40,
         justifyContent: 'center',
+        paddingRight: 40,
         paddingBottom: 5,
         marginLeft: 32,
         marginVertical: 32

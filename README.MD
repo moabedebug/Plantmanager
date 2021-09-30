@@ -1,1 +1,1 @@
-Antes de iniciar de um "expo Start" depois um "json-server ./src/services/server.json --host ver.json --host (Endereço de IP do seu computador) --port 3333 --delay 700"
+Antes de iniciar de um "expo Start" depois um "json-server ./src/services/server.json --host (Endereço de IP do seu computador) --port 3333 --delay 700"
