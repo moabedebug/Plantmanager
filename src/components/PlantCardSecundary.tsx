@@ -49,13 +49,23 @@ export const PlantCardSecundary = ({ data, handleRemove, ...rest }: PlantProps) 
                 style={styles.container}
                 {...rest}
             >
+
                 <SvgFromUri
                     uri={data.photo}
                     width={50}
                     height={50}
                 />
-                <Text >
+                <Text />
                     {data.name}
+
+                <SvgFromUri 
+                    uri={data.photo} 
+                    width={50} 
+                    height={50} 
+                    />  
+                <Text style={styles.title} >
+                    { data.name }
+
                 </Text>
                 <View style={styles.details}>
                     <Text style={styles.timeLabel}>
@@ -69,6 +79,7 @@ export const PlantCardSecundary = ({ data, handleRemove, ...rest }: PlantProps) 
         </Swipeable>
     )
 }
+
 
 const styles = StyleSheet.create({
     container: {
